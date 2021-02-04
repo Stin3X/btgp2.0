@@ -1,0 +1,180 @@
+@import "vars";
+@import "mixin";
+
+// TITLE
+h1 {
+  @include Graphik;
+  color: $black;
+  font-size: $font-size + 56;
+  font-weight: $font-weight + 300;
+  line-height: $line-heightTitle;
+}
+
+h2 {
+  @include Graphik;
+  color: $black;
+  font-size: $font-size + 26;
+  font-weight: $font-weight + 300;
+  line-height: $line-heightTitle;
+}
+
+h3 {
+  @include Graphik;
+  color: $black;
+  font-size: $font-size + 8;
+  font-weight: $font-weight + 200;
+  line-height: $line-heightTitle;
+}
+
+h4 {
+  @include Graphik;
+  color: $black;
+  font-size: $font-size + 4;
+  font-weight: $font-weight + 300;
+  line-height: $line-heightTitle;
+}
+
+// TITLE
+
+// TEXT
+p {
+  @include Graphik;
+  color: $darkGray;
+  font-size: $font-size + 4;
+  font-weight: $font-weight;
+  line-height: $line-heightText;
+}
+
+.simple__text {
+  @include Graphik;
+  color: $gray;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+.subtitle {
+  @include Graphik;
+  color: $black;
+  font-size: $font-size + 16;
+  font-weight: $font-weight;
+
+  margin-top: 3px;
+  margin-bottom: 30px;
+}
+
+// TEXT
+
+// LINK
+a {
+  @include Graphik;
+  color: $blue;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+.color__link {
+  color: $blue !important;
+}
+
+// LINK
+
+// FORM
+input {
+  @include Graphik;
+  color: $gray;
+  font-size: $font-size;
+  font-weight: $font-weight;
+
+  width: 391px;
+  border: 1px solid $inputColor;
+  border-radius: 8px;
+
+  padding: 20px;
+
+  margin-bottom: 8px;
+
+  outline: none;
+}
+
+textarea {
+  @include Graphik;
+  color: $gray;
+  font-size: $font-size;
+  font-weight: $font-weight;
+
+  width: 391px;
+  height: 198px;
+  border: 1px solid $inputColor;
+  border-radius: 8px;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+
+  outline: none;
+  resize: vertical;
+}
+
+// FORM
+
+// CONTAINER
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.container {
+  width: 1250px;
+}
+
+.container__additional {
+  width: 1290px;
+}
+
+// CONTAINER
+
+// BUTTON
+.btn {
+  @include Graphik;
+  font-size: $font-size - 2;
+  font-weight: $font-weight;
+  line-height: 14px;
+
+  border-radius: 100px;
+  border: none;
+
+  padding: 10px 14px;
+}
+
+.btn__form {
+  @include Graphik;
+  color: $white;
+  font-size: $font-size;
+  font-weight: $font-weight;
+
+  width: 195px;
+
+  background: $blue;
+  border: none;
+  border-radius: 100px;
+
+  padding: 20px 32px;
+
+  transition: .2s ease;
+
+  &:hover {
+    background: $hoverLink;
+  }
+}
+
+// BUTTON
+
+// INDENT
+.zeroing__indent {
+  margin-top: 0 !important;
+}
+
+// INDENT

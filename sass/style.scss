@@ -1,0 +1,1027 @@
+@import "mixin";
+@import "properties";
+@import "common";
+@import "fonts";
+@import "vars";
+
+// Header
+.header {
+  padding-top: 15px;
+  padding-bottom: 60px;
+
+  position: relative;
+
+  .header__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 999;
+
+    .header__social {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      border-bottom: 1px solid #E8E8E8;
+
+      padding-bottom: 15px;
+
+      .header__social-left {
+        display: flex;
+        align-items: center;
+
+        .header__logo {
+          background: url(#{$images}/Logo.png) no-repeat;
+          width: 149px;
+          height: 39px;
+        }
+
+        .header__common {
+          display: flex;
+
+          margin-left: 20px;
+
+          .header__social-link {
+            display: flex;
+            align-items: center;
+
+            @include Graphik;
+            color: $gray;
+            font-size: $font-size - 2;
+            font-weight: $font-weight;
+
+            margin-right: 20px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            &:hover {
+              color: $black;
+            }
+
+            .svg__icon {
+              fill: #9298A4;
+              transition: fill .2s ease;
+
+              margin-right: 5px;
+            }
+          }
+
+          .header__social-link:hover .svg__icon {
+            fill: $black;
+          }
+        }
+      }
+
+      .header__social-right {
+        display: flex;
+
+        .header__btn-question {
+          color: $blue;
+
+          background: $lightGray;
+
+          margin-right: 10px;
+        }
+
+        .header__btn-in {
+          color: $black;
+
+          background: $verylightGray;
+
+          .header__btn-icon {
+            background: url(#{$images}/Log-out.svg);
+            width: 12px;
+            height: 12px;
+
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .header__nav {
+      display: flex;
+
+      margin-top: 19px;
+
+      .header__dropdown {
+
+        width: 165px;
+        height: 226px;
+        box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px -1px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+      }
+
+      .nav__link {
+        @include Graphik;
+        color: $black;
+        font-size: $font-size;
+        font-weight: $font-weight;
+        line-height: 16px;
+
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .header__dropdown {
+    display: none;
+    flex-direction: column;
+
+    width: 100%;
+    height: 600px;
+
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    background-color: $white;
+
+    position: absolute;
+    top: 0;
+
+    padding: 40px;
+
+    .header__dropdown-inner {
+      display: flex;
+      justify-content: center;
+
+      margin-top: 10em;
+
+      .header__block {
+        display: flex;
+        flex-direction: column;
+
+        .dropdown__title {
+          margin-bottom: 10px;
+        }
+
+        .dropdown__link {
+          color: $black;
+
+          margin-bottom: 4px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Header
+
+// drivingSchool
+.driving {
+  margin-bottom: 60px;
+
+  .driving__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .driving__subtitle {
+      color: $black;
+      font-size: $font-size + 16;
+
+      margin-top: 3px;
+      margin-bottom: 30px;
+    }
+
+    .driving__inner {
+      display: flex;
+
+      margin-top: 20px;
+
+      .driving__block {
+        display: flex;
+        flex-direction: column;
+
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .driving__general {
+          color: $black;
+          font-weight: $font-weight + 100;
+
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
+
+.autopark {
+  margin-bottom: 80px;
+
+  .autopark__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .autopark__subtitle {
+      max-width: 640px;
+
+      margin-top: 8px;
+    }
+
+    .autopark__inner {
+      display: flex;
+
+      margin-top: 30px;
+
+      .autopark__block {
+        display: flex;
+        flex-direction: column;
+
+        margin-right: 25px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .autopark__title {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.area {
+  margin-bottom: 80px;
+
+  .area__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .area__subtitle {
+      max-width: 660px;
+
+      margin-top: 8px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.information {
+  margin-bottom: 80px;
+
+  .information__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .information__left {
+      display: flex;
+      flex-direction: column;
+
+      .information__subtitle {
+        margin-top: 8px;
+      }
+
+      .information__inner {
+        display: flex;
+
+        margin-top: 30px;
+
+        .information__block {
+          display: flex;
+          flex-direction: column;
+
+          max-width: 210px;
+
+          margin-right: 24px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .information__indent {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    .information__right {
+      display: flex;
+      flex-direction: column;
+
+      .information__title {
+        max-width: 565px;
+
+        margin-bottom: 30px;
+      }
+
+      .information__more {
+        display: flex;
+
+        .information__images-one {
+          background: url(#{$images}/moreOne.png) no-repeat;
+
+          margin-right: 24px;
+        }
+
+        .information__images-two {
+          background: url(#{$images}/moreTwo.png) no-repeat;
+        }
+
+        .information__images {
+          width: 288px;
+          height: 116px;
+        }
+      }
+    }
+  }
+}
+
+.enrollment {
+  margin-bottom: 51px;
+
+  .enrollment__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    background: $background;
+
+    padding-left: 23px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+
+    .enrollment__inner {
+      display: flex;
+      justify-content: space-between;
+
+      width: 1101px;
+
+      margin-top: 30px;
+
+      .enrollment__block {
+        display: flex;
+        flex-direction: column;
+
+        .enrollment__link {
+          max-width: 100px;
+
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.feedback {
+  margin-bottom: 80px;
+
+  .feedback__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .feedback__form {
+      display: flex;
+      flex-direction: column;
+
+      margin-top: 28px;
+    }
+  }
+}
+
+// drivingSchool
+
+// generalInformation
+.knowledge {
+  margin-bottom: 60px;
+
+  .knowledge__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .knowledge__images {
+      background: url(#{$images}/btgp.jpg) no-repeat;
+      width: 1250px;
+      height: 382px;
+      background-size: cover;
+    }
+
+    .knowledge__inner {
+      display: flex;
+
+      margin-top: 20px;
+
+      .knowledge__block {
+        display: flex;
+        flex-direction: column;
+
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .knowledge__general {
+          color: $black;
+          font-weight: $font-weight + 100;
+
+          max-width: 260px;
+
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}
+
+// generalInformation
+
+// Teachers
+.teachers {
+  margin-bottom: 80px;
+
+  .teachers__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .teachers__inner {
+      display: flex;
+      flex-direction: column;
+
+      .teachers__additional {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        margin-bottom: 45px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .teachers__block {
+          display: flex;
+          flex-direction: column;
+
+          //transition: .2s ease;
+          //
+          //&:hover {
+          //  transform: scale(1.2);
+          //}
+
+          .teachers__images {
+            width: 200px;
+            height: 200px;
+
+            border-radius: 100px;
+
+            margin-bottom: 14px;
+          }
+
+          .teachers__images-one {
+            background: url(#{$images}/teachersOne.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-two {
+            background: url(#{$images}/teachersTwo.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-three {
+            background: url(#{$images}/teachersThree.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-four {
+            background: url(#{$images}/teachersFour.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-five {
+            background: url(#{$images}/teachersFive.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-six {
+            background: url(#{$images}/teachersSix.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-seven {
+            background: url(#{$images}/teachersSeven.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-eight {
+            background: url(#{$images}/teachersEight.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-nine {
+            background: url(#{$images}/teachersNine.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-ten {
+            background: url(#{$images}/noPicture.png);
+            background-size: cover;
+          }
+
+          .teachers__images-eleven {
+            background: url(#{$images}/noPicture.png);
+            background-size: cover;
+          }
+
+          .teachers__images-twelve {
+            background: url(#{$images}/noPicture.png);
+            background-size: cover;
+          }
+
+          .teachers__images-thirteen {
+            background: url(#{$images}/teachersTen.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-fourteen {
+            background: url(#{$images}/teachersEleven.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-fifteen {
+            background: url(#{$images}/teachersTwelve.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-sixteen {
+            background: url(#{$images}/teachersThirteen.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-seventeen {
+            background: url(#{$images}/noPicture.png);
+            background-size: cover;
+          }
+
+          .teachers__images-eighteen {
+            background: url(#{$images}/teachersFourteen.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-nineteen {
+            background: url(#{$images}/teachersFifteen.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-twenty {
+            background: url(#{$images}/teachersSixteen.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-twenty-one {
+            background: url(#{$images}/teachersSeventeen.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-twenty-two {
+            background: url(#{$images}/teachersEighteen.jpg);
+            background-size: cover;
+          }
+
+          .teachers__images-twenty-three {
+            background: url(#{$images}/noPicture.png);
+            background-size: cover;
+          }
+
+          .teachers__images-twenty-four {
+            background: url(#{$images}/noPicture.png);
+            background-size: cover;
+          }
+
+          .teachers__title {
+            @include Graphik;
+            color: $black;
+            font-size: $font-size + 4;
+            font-weight: $font-weight + 300;
+            line-height: $line-heightTitle;
+
+            max-width: 250px;
+
+            transition: .2s ease;
+
+            &:hover {
+              color: $blue;
+            }
+          }
+
+          .teachers__subtitle {
+            @include Graphik;
+            color: $teachersSubtitle;
+            font-size: $font-size + 2;
+            font-weight: $font-weight;
+            max-width: 240px;
+
+            margin-top: 4px;
+            margin-bottom: 11px;
+          }
+
+          .teachers__link {
+            font-size: $font-size + 2;
+
+            transition: .2s ease;
+
+            &:hover {
+              color: $hoverLink;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Teachers
+
+// Details
+.details {
+  margin-bottom: 80px;
+
+  .details__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .details__images {
+      width: 330px;
+      height: 330px;
+
+      border-radius: 200px;
+
+      margin-right: 30px;
+    }
+
+    .details__images-one {
+      background: url(#{$images}/teachersThree.jpg);
+      background-size: cover;
+    }
+
+    .details__images-two {
+      background: url(#{$images}/teachersOne.jpg);
+      background-size: cover;
+    }
+
+    .details__images-three {
+      background: url(#{$images}/teachersTwo.jpg);
+      background-size: cover;
+    }
+
+    .details__images-four {
+      background: url(#{$images}/teachersFour.jpg);
+      background-size: cover;
+    }
+
+    .details__images-five {
+      background: url(#{$images}/teachersFive.jpg);
+      background-size: cover;
+    }
+
+    .details__images-six {
+      background: url(#{$images}/teachersSix.jpg);
+      background-size: cover;
+    }
+
+    .details__images-seven {
+      background: url(#{$images}/teachersSeven.jpg);
+      background-size: cover;
+    }
+
+    .details__images-eight {
+      background: url(#{$images}/teachersEight.jpg);
+      background-size: cover;
+    }
+
+    .details__images-nine {
+      background: url(#{$images}/teachersNine.jpg);
+      background-size: cover;
+    }
+
+    .details__images-ten {
+      background: url(#{$images}/noPicture.png);
+      background-size: cover;
+    }
+
+    .details__images-eleven {
+      background: url(#{$images}/noPicture.png);
+      background-size: cover;
+    }
+
+    .details__images-twelve {
+      background: url(#{$images}/noPicture.png);
+      background-size: cover;
+    }
+
+    .details__images-thirteen {
+      background: url(#{$images}/teachersTen.jpg);
+      background-size: cover;
+    }
+
+    .details__images-fourteen {
+      background: url(#{$images}/teachersEleven.jpg);
+      background-size: cover;
+    }
+
+    .details__images-fifteen {
+      background: url(#{$images}/teachersTwelve.jpg);
+      background-size: cover;
+    }
+
+    .details__images-sixteen {
+      background: url(#{$images}/teachersThirteen.jpg);
+      background-size: cover;
+    }
+
+    .details__images-seventeen {
+      background: url(#{$images}/noPicture.png);
+      background-size: cover;
+    }
+
+    .details__images-eighteen {
+      background: url(#{$images}/teachersFourteen.jpg);
+      background-size: cover;
+    }
+
+    .details__images-nineteen {
+      background: url(#{$images}/teachersFifteen.jpg);
+      background-size: cover;
+    }
+
+    .details__images-twenty {
+      background: url(#{$images}/teachersSixteen.jpg);
+      background-size: cover;
+    }
+
+    .details__images-twenty-one {
+      background: url(#{$images}/teachersSeventeen.jpg);
+      background-size: cover;
+    }
+
+    .details__images-twenty-two {
+      background: url(#{$images}/teachersEighteen.jpg);
+      background-size: cover;
+    }
+
+    .details__images-twenty-three {
+      background: url(#{$images}/noPicture.png);
+      background-size: cover;
+    }
+
+    .details__images-twenty-four {
+      background: url(#{$images}/noPicture.png);
+      background-size: cover;
+    }
+
+    .details__description {
+      display: flex;
+      flex-direction: column;
+
+      .details__block {
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .details__title {
+          font-size: $font-size + 36;
+          font-weight: $font-weight + 500;
+          max-width: 750px;
+        }
+
+        .details__subtitle {
+          font-size: $font-size + 8;
+          max-width: 675px;
+
+          margin-top: 11px;
+          margin-bottom: 12px;
+        }
+
+        .title {
+          max-width: 795px;
+        }
+
+        .details__text {
+          max-width: 860px;
+          text-align: justify;
+
+          margin-top: 8px;
+        }
+
+        .details__communication {
+          display: flex;
+
+          .details__link {
+            font-size: $font-size + 8;
+
+            margin-right: 7px;
+
+            transition: .2s ease;
+
+            &:hover {
+              color: $hoverLink;
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Details
+
+// Paid educational services
+.services {
+  margin-bottom: 80px;
+
+  .services__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+
+    .services__block {
+      display: flex;
+      flex-direction: column;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .services__images {
+        width: 465px;
+        height: 300px;
+      }
+
+      .services__images-one {
+        background: url(#{$images}/stonemason.jpg) no-repeat;
+        background-size: cover;
+      }
+
+      .services__images-two {
+        background: url(#{$images}/web.jpg) no-repeat;
+        background-size: cover;
+      }
+
+      .services__images-three {
+        background: url(#{$images}/autocad.jpg) no-repeat;
+        background-size: cover;
+      }
+
+      .services__images-four {
+        background: url(#{$images}/accountant.jpg) no-repeat;
+        background-size: cover;
+      }
+
+      .services__images-five {
+        background: url(#{$images}/barber.jpg) no-repeat;
+        background-size: cover;
+      }
+
+      .services__text {
+        margin-top: 10px;
+        margin-bottom: 8px;
+      }
+
+      .services__link {
+        color: $black;
+        font-size: $font-size + 8;
+        font-weight: $font-weight + 200;
+        line-height: $line-heightTitle;
+
+        transition: .2s ease;
+
+        &:hover {
+          color: $hoverLink;
+        }
+      }
+    }
+  }
+}
+
+// Paid educational services
+
+// Specialties
+.specialties {
+  margin-bottom: 80px;
+
+  .specialties__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .specialties__description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(#{$images}/stonemason.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 350px;
+
+      padding: 30px;
+
+      .specialties__description-title {
+        color: $white;
+      }
+
+      .specialties__color {
+        color: $white;
+
+        margin-bottom: 0;
+      }
+    }
+
+    .specialties__sign {
+      display: flex;
+      justify-content: space-between;
+
+      background-color: $black;
+
+      padding: 30px;
+
+      margin-bottom: 30px;
+
+      .specialties__block {
+        display: flex;
+        flex-direction: column;
+
+        .specialties__title {
+          color: $gray;
+
+          margin-bottom: 10px;
+        }
+
+        .specialties__text {
+          color: $white;
+          font-size: $font-size + 9;
+        }
+
+        .specialties__weight {
+          font-weight: $font-weight + 300;
+        }
+      }
+    }
+  }
+}
+
+// Specialties
+
+
+// Footer
+.footer {
+  background: $blue;
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .footer__block {
+      display: flex;
+      flex-direction: column;
+
+      .footer__title {
+        color: $white;
+
+        margin-bottom: 10px;
+      }
+
+      .footer__link {
+        color: $footerLink;
+
+        margin-bottom: 4px;
+
+        transition: .2s ease;
+
+        &:hover {
+          color: $white;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// Footer
