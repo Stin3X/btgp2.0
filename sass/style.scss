@@ -468,135 +468,6 @@
           //  transform: scale(1.2);
           //}
 
-          .teachers__images {
-            width: 200px;
-            height: 200px;
-
-            border-radius: 100px;
-
-            margin-bottom: 14px;
-          }
-
-          .teachers__images-one {
-            background: url(#{$images}/teachersOne.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-two {
-            background: url(#{$images}/teachersTwo.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-three {
-            background: url(#{$images}/teachersThree.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-four {
-            background: url(#{$images}/teachersFour.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-five {
-            background: url(#{$images}/teachersFive.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-six {
-            background: url(#{$images}/teachersSix.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-seven {
-            background: url(#{$images}/teachersSeven.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-eight {
-            background: url(#{$images}/teachersEight.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-nine {
-            background: url(#{$images}/teachersNine.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-ten {
-            background: url(#{$images}/noPicture.png);
-            background-size: cover;
-          }
-
-          .teachers__images-eleven {
-            background: url(#{$images}/noPicture.png);
-            background-size: cover;
-          }
-
-          .teachers__images-twelve {
-            background: url(#{$images}/noPicture.png);
-            background-size: cover;
-          }
-
-          .teachers__images-thirteen {
-            background: url(#{$images}/teachersTen.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-fourteen {
-            background: url(#{$images}/teachersEleven.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-fifteen {
-            background: url(#{$images}/teachersTwelve.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-sixteen {
-            background: url(#{$images}/teachersThirteen.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-seventeen {
-            background: url(#{$images}/noPicture.png);
-            background-size: cover;
-          }
-
-          .teachers__images-eighteen {
-            background: url(#{$images}/teachersFourteen.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-nineteen {
-            background: url(#{$images}/teachersFifteen.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-twenty {
-            background: url(#{$images}/teachersSixteen.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-twenty-one {
-            background: url(#{$images}/teachersSeventeen.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-twenty-two {
-            background: url(#{$images}/teachersEighteen.jpg);
-            background-size: cover;
-          }
-
-          .teachers__images-twenty-three {
-            background: url(#{$images}/noPicture.png);
-            background-size: cover;
-          }
-
-          .teachers__images-twenty-four {
-            background: url(#{$images}/noPicture.png);
-            background-size: cover;
-          }
-
           .teachers__title {
             @include Graphik;
             color: $black;
@@ -656,126 +527,6 @@
       border-radius: 200px;
 
       margin-right: 30px;
-    }
-
-    .details__images-one {
-      background: url(#{$images}/teachersThree.jpg);
-      background-size: cover;
-    }
-
-    .details__images-two {
-      background: url(#{$images}/teachersOne.jpg);
-      background-size: cover;
-    }
-
-    .details__images-three {
-      background: url(#{$images}/teachersTwo.jpg);
-      background-size: cover;
-    }
-
-    .details__images-four {
-      background: url(#{$images}/teachersFour.jpg);
-      background-size: cover;
-    }
-
-    .details__images-five {
-      background: url(#{$images}/teachersFive.jpg);
-      background-size: cover;
-    }
-
-    .details__images-six {
-      background: url(#{$images}/teachersSix.jpg);
-      background-size: cover;
-    }
-
-    .details__images-seven {
-      background: url(#{$images}/teachersSeven.jpg);
-      background-size: cover;
-    }
-
-    .details__images-eight {
-      background: url(#{$images}/teachersEight.jpg);
-      background-size: cover;
-    }
-
-    .details__images-nine {
-      background: url(#{$images}/teachersNine.jpg);
-      background-size: cover;
-    }
-
-    .details__images-ten {
-      background: url(#{$images}/noPicture.png);
-      background-size: cover;
-    }
-
-    .details__images-eleven {
-      background: url(#{$images}/noPicture.png);
-      background-size: cover;
-    }
-
-    .details__images-twelve {
-      background: url(#{$images}/noPicture.png);
-      background-size: cover;
-    }
-
-    .details__images-thirteen {
-      background: url(#{$images}/teachersTen.jpg);
-      background-size: cover;
-    }
-
-    .details__images-fourteen {
-      background: url(#{$images}/teachersEleven.jpg);
-      background-size: cover;
-    }
-
-    .details__images-fifteen {
-      background: url(#{$images}/teachersTwelve.jpg);
-      background-size: cover;
-    }
-
-    .details__images-sixteen {
-      background: url(#{$images}/teachersThirteen.jpg);
-      background-size: cover;
-    }
-
-    .details__images-seventeen {
-      background: url(#{$images}/noPicture.png);
-      background-size: cover;
-    }
-
-    .details__images-eighteen {
-      background: url(#{$images}/teachersFourteen.jpg);
-      background-size: cover;
-    }
-
-    .details__images-nineteen {
-      background: url(#{$images}/teachersFifteen.jpg);
-      background-size: cover;
-    }
-
-    .details__images-twenty {
-      background: url(#{$images}/teachersSixteen.jpg);
-      background-size: cover;
-    }
-
-    .details__images-twenty-one {
-      background: url(#{$images}/teachersSeventeen.jpg);
-      background-size: cover;
-    }
-
-    .details__images-twenty-two {
-      background: url(#{$images}/teachersEighteen.jpg);
-      background-size: cover;
-    }
-
-    .details__images-twenty-three {
-      background: url(#{$images}/noPicture.png);
-      background-size: cover;
-    }
-
-    .details__images-twenty-four {
-      background: url(#{$images}/noPicture.png);
-      background-size: cover;
     }
 
     .details__description {
@@ -847,67 +598,42 @@
   .services__wrapper {
     display: flex;
     flex-direction: column;
-  }
 
-  .services__inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 30px;
+    .services__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 30px;
+      row-gap: 60px;
 
-    .services__block {
-      display: flex;
-      flex-direction: column;
+      .services__block {
+        display: flex;
+        flex-direction: column;
 
-      &:last-child {
-        margin-right: 0;
-      }
+        &:last-child {
+          margin-right: 0;
+        }
 
-      .services__images {
-        width: 465px;
-        height: 300px;
-      }
+        .services__images {
+          width: 395px;
+          height: 300px;
+        }
 
-      .services__images-one {
-        background: url(#{$images}/stonemason.jpg) no-repeat;
-        background-size: cover;
-      }
+        .services__text {
+          margin-top: 10px;
+          margin-bottom: 8px;
+        }
 
-      .services__images-two {
-        background: url(#{$images}/web.jpg) no-repeat;
-        background-size: cover;
-      }
+        .services__link {
+          color: $black;
+          font-size: $font-size + 8;
+          font-weight: $font-weight + 200;
+          line-height: $line-heightTitle;
 
-      .services__images-three {
-        background: url(#{$images}/autocad.jpg) no-repeat;
-        background-size: cover;
-      }
+          transition: .2s ease;
 
-      .services__images-four {
-        background: url(#{$images}/accountant.jpg) no-repeat;
-        background-size: cover;
-      }
-
-      .services__images-five {
-        background: url(#{$images}/barber.jpg) no-repeat;
-        background-size: cover;
-      }
-
-      .services__text {
-        margin-top: 10px;
-        margin-bottom: 8px;
-      }
-
-      .services__link {
-        color: $black;
-        font-size: $font-size + 8;
-        font-weight: $font-weight + 200;
-        line-height: $line-heightTitle;
-
-        transition: .2s ease;
-
-        &:hover {
-          color: $hoverLink;
+          &:hover {
+            color: $hoverLink;
+          }
         }
       }
     }
@@ -929,22 +655,11 @@
       flex-direction: column;
       justify-content: center;
 
-      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(#{$images}/stonemason.jpg);
-      background-size: cover;
-      width: 100%;
-      height: 350px;
+      .specialties__images {
+        width: 100%;
+        height: 350px;
 
-      padding: 30px;
-
-      .specialties__description-title {
-        color: $white;
-      }
-
-      .specialties__color {
-        color: $white;
-
-        margin-bottom: 0;
+        // background-color: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
       }
     }
 
@@ -978,10 +693,146 @@
         }
       }
     }
+
+    .specialties__description-course {
+      display: flex;
+      justify-content: space-between;
+
+      .specialties__left {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .specialties__right {
+        display: flex;
+        flex-direction: column;
+
+        .specialties__right-block {
+          width: 850px;
+
+          background: #FFFFFF;
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+          padding: 30px;
+          margin-bottom: 30px;
+
+          .specialties__teachers {
+            display: flex;
+            justify-content: space-between;
+
+            .specialties__teachers-block {
+              display: flex;
+              flex-direction: column;
+
+              .specialties__images {
+                width: 200px;
+                height: 200px;
+
+                border-radius: 100px;
+
+                margin-bottom: 14px;
+              }
+
+              .specialties__title {
+                @include Graphik;
+                color: $black;
+                font-size: $font-size + 4;
+                font-weight: $font-weight + 300;
+                line-height: $line-heightTitle;
+
+                max-width: 250px;
+
+                transition: .2s ease;
+
+                &:hover {
+                  color: $blue;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 // Specialties
+
+// organizationStructure
+.organization {
+  margin-bottom: 80px;
+
+  .organization__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .organization__inner {
+      display: flex;
+      flex-direction: column;
+
+      .organization__additional {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        margin-bottom: 45px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .organization__block {
+          display: flex;
+          flex-direction: column;
+
+          //transition: .2s ease;
+          //
+          //&:hover {
+          //  transform: scale(1.2);
+          //}
+
+          .organization__title {
+            @include Graphik;
+            color: $black;
+            font-size: $font-size + 4;
+            font-weight: $font-weight + 300;
+            line-height: $line-heightTitle;
+
+            max-width: 250px;
+
+            transition: .2s ease;
+
+            &:hover {
+              color: $blue;
+            }
+          }
+
+          .organization__subtitle {
+            @include Graphik;
+            color: $teachersSubtitle;
+            font-size: $font-size + 2;
+            font-weight: $font-weight;
+            max-width: 240px;
+
+            margin-top: 4px;
+            margin-bottom: 11px;
+          }
+
+          .organization__link {
+            font-size: $font-size + 2;
+
+            transition: .2s ease;
+
+            &:hover {
+              color: $hoverLink;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// organizationStructure
 
 
 // Footer

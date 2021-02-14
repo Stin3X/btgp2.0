@@ -177,4 +177,170 @@ textarea {
   margin-top: 0 !important;
 }
 
+.text__indent {
+  margin-bottom: 10px;
+}
+
 // INDENT
+
+// PICTURE
+.teachers__images {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 100px;
+
+  margin-bottom: 14px;
+}
+
+.teachers__images-one {
+  background: url(#{$images}/teachersOne.jpg);
+  background-size: cover;
+}
+
+.teachers__images-two {
+  background: url(#{$images}/teachersTwo.jpg);
+  background-size: cover;
+}
+
+.teachers__images-three {
+  background: url(#{$images}/teachersThree.jpg);
+  background-size: cover;
+}
+
+.teachers__images-four {
+  background: url(#{$images}/teachersFour.jpg);
+  background-size: cover;
+}
+
+.teachers__images-five {
+  background: url(#{$images}/teachersFive.jpg);
+  background-size: cover;
+}
+
+.teachers__images-six {
+  background: url(#{$images}/teachersSix.jpg);
+  background-size: cover;
+}
+
+.teachers__images-seven {
+  background: url(#{$images}/teachersSeven.jpg);
+  background-size: cover;
+}
+
+.teachers__images-eight {
+  background: url(#{$images}/teachersEight.jpg);
+  background-size: cover;
+}
+
+.teachers__images-nine {
+  background: url(#{$images}/teachersNine.jpg);
+  background-size: cover;
+}
+
+.teachers__images-ten {
+  background: url(#{$images}/noPicture.png);
+  background-size: cover;
+}
+
+.teachers__images-eleven {
+  background: url(#{$images}/noPicture.png);
+  background-size: cover;
+}
+
+.teachers__images-twelve {
+  background: url(#{$images}/teachersTwenty.jpg);
+  background-size: cover;
+}
+
+.teachers__images-thirteen {
+  background: url(#{$images}/teachersTen.jpg);
+  background-size: cover;
+}
+
+.teachers__images-fourteen {
+  background: url(#{$images}/teachersEleven.jpg);
+  background-size: cover;
+}
+
+.teachers__images-fifteen {
+  background: url(#{$images}/teachersTwelve.jpg);
+  background-size: cover;
+}
+
+.teachers__images-sixteen {
+  background: url(#{$images}/teachersThirteen.jpg);
+  background-size: cover;
+}
+
+.teachers__images-seventeen {
+  background: url(#{$images}/noPicture.png);
+  background-size: cover;
+}
+
+.teachers__images-eighteen {
+  background: url(#{$images}/teachersFourteen.jpg);
+  background-size: cover;
+}
+
+.teachers__images-nineteen {
+  background: url(#{$images}/teachersFifteen.jpg);
+  background-size: cover;
+}
+
+.teachers__images-twenty {
+  background: url(#{$images}/teachersSixteen.jpg);
+  background-size: cover;
+}
+
+.teachers__images-twenty-one {
+  background: url(#{$images}/teachersSeventeen.jpg);
+  background-size: cover;
+}
+
+.teachers__images-twenty-two {
+  background: url(#{$images}/teachersEighteen.jpg);
+  background-size: cover;
+}
+
+.teachers__images-twenty-three {
+  background: url(#{$images}/noPicture.png);
+  background-size: cover;
+}
+
+.teachers__images-twenty-four {
+  background: url(#{$images}/noPicture.png);
+  background-size: cover;
+}
+
+.teachers__images-twenty-five {
+  background: url(#{$images}/teachersNineten.jpg);
+  background-size: cover;
+}
+
+.services__images-one {
+  background: url(#{$images}/stonemason.jpg) no-repeat;
+  background-size: cover;
+}
+
+.services__images-two {
+  background: url(#{$images}/web.jpg) no-repeat;
+  background-size: cover;
+}
+
+.services__images-three {
+  background: url(#{$images}/autocad.jpg) no-repeat;
+  background-size: cover;
+}
+
+.services__images-four {
+  background: url(#{$images}/accountant.jpg) no-repeat;
+  background-size: cover;
+}
+
+.services__images-five {
+  background: url(#{$images}/barber.jpg) no-repeat;
+  background-size: cover;
+}
+
+// PICTURE
