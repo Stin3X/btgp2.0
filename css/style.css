@@ -573,7 +573,6 @@ textarea {
           display: flex;
           flex-direction: column; }
           .teachers .teachers__wrapper .teachers__inner .teachers__additional .teachers__block .teachers__title {
-            font-family: "Graphik LCG", sans-serif;
             color: #222222;
             font-size: 20px;
             font-weight: 700;
@@ -583,7 +582,6 @@ textarea {
             .teachers .teachers__wrapper .teachers__inner .teachers__additional .teachers__block .teachers__title:hover {
               color: #1A54CA; }
           .teachers .teachers__wrapper .teachers__inner .teachers__additional .teachers__block .teachers__subtitle {
-            font-family: "Graphik LCG", sans-serif;
             color: #848484;
             font-size: 18px;
             font-weight: 400;
@@ -753,7 +751,6 @@ textarea {
           display: flex;
           flex-direction: column; }
           .organization .organization__wrapper .organization__inner .organization__additional .organization__block .organization__title {
-            font-family: "Graphik LCG", sans-serif;
             color: #222222;
             font-size: 20px;
             font-weight: 700;
@@ -763,7 +760,6 @@ textarea {
             .organization .organization__wrapper .organization__inner .organization__additional .organization__block .organization__title:hover {
               color: #1A54CA; }
           .organization .organization__wrapper .organization__inner .organization__additional .organization__block .organization__subtitle {
-            font-family: "Graphik LCG", sans-serif;
             color: #848484;
             font-size: 18px;
             font-weight: 400;
@@ -775,6 +771,108 @@ textarea {
             transition: .2s ease; }
             .organization .organization__wrapper .organization__inner .organization__additional .organization__block .organization__link:hover {
               color: #123a8d; }
+      .organization .organization__wrapper .organization__inner .contact {
+        display: flex;
+        flex-direction: column; }
+        .organization .organization__wrapper .organization__inner .contact .contact__maps {
+          display: flex;
+          margin-bottom: 40px; }
+          .organization .organization__wrapper .organization__inner .contact .contact__maps .contact__btn {
+            text-align: center;
+            margin-right: 10px; }
+            .organization .organization__wrapper .organization__inner .contact .contact__maps .contact__btn:last-child {
+              margin-right: 0; }
+      .organization .organization__wrapper .organization__inner .contact__block {
+        display: flex;
+        flex-direction: column; }
+        .organization .organization__wrapper .organization__inner .contact__block .contact__link {
+          font-size: 20px;
+          transition: .2s ease;
+          margin-bottom: 8px; }
+          .organization .organization__wrapper .organization__inner .contact__block .contact__link:last-child {
+            margin-bottom: 0; }
+          .organization .organization__wrapper .organization__inner .contact__block .contact__link:hover {
+            color: #123a8d; }
+
+.employment {
+  margin-bottom: 45px; }
+  .employment .employment__wrapper {
+    display: flex;
+    flex-direction: column; }
+    .employment .employment__wrapper .employment__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 30px; }
+      .employment .employment__wrapper .employment__inner .employment__block {
+        display: flex;
+        flex-direction: column; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images {
+          width: 200px;
+          height: 200px;
+          margin-bottom: 14px; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images-one {
+          background: url(../images/LogoOne.png) no-repeat;
+          background-size: cover; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images-two {
+          background: url(../images/LogoTwo.jpg) no-repeat center;
+          background-size: cover; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images-three {
+          background: url(../images/LogoThree.png) no-repeat center;
+          background-size: cover; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images-four {
+          background: url(../images/LogoFour.png) no-repeat center;
+          background-size: cover; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images-five {
+          background: url(../images/LogoFive.jpg) no-repeat center;
+          background-size: cover; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images-six {
+          background: url(../images/LogoSix.png) no-repeat center;
+          background-size: cover; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images-seven {
+          background: url(../images/LogoSeven.png) no-repeat center;
+          background-size: cover; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images-eight {
+          background: url(../images/LogoEight.jpg) no-repeat center;
+          background-size: cover; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images-nine {
+          background: url(../images/LogoNine.jpg) no-repeat center;
+          background-size: cover; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images-ten {
+          background: url(../images/LogoTen.png) no-repeat center;
+          background-size: cover; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images-eleven {
+          background: url(../images/LogoEleven.png) no-repeat center;
+          background-size: cover; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__images-twelve {
+          background: url(../images/LogoTwelve.png) no-repeat center;
+          background-size: cover; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__title {
+          color: #222222;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 110%;
+          max-width: 250px; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__subtitle {
+          color: #848484;
+          font-size: 18px;
+          font-weight: 400;
+          max-width: 240px;
+          margin-top: 4px;
+          margin-bottom: 11px; }
+        .employment .employment__wrapper .employment__inner .employment__block .employment__link {
+          font-size: 20px;
+          transition: .2s ease; }
+          .employment .employment__wrapper .employment__inner .employment__block .employment__link:hover {
+            color: #123a8d; }
+
+.dormitory {
+  margin-bottom: 45px; }
+  .dormitory .dormitory__wrapper {
+    display: flex;
+    flex-direction: column; }
+    .dormitory .dormitory__wrapper .dormitory__subtitle {
+      margin-top: 8px;
+      margin-bottom: 30px; }
 
 .footer {
   background: #1A54CA; }

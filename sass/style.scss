@@ -469,7 +469,6 @@
           //}
 
           .teachers__title {
-            @include Graphik;
             color: $black;
             font-size: $font-size + 4;
             font-weight: $font-weight + 300;
@@ -485,7 +484,6 @@
           }
 
           .teachers__subtitle {
-            @include Graphik;
             color: $teachersSubtitle;
             font-size: $font-size + 2;
             font-weight: $font-weight;
@@ -791,7 +789,6 @@
           //}
 
           .organization__title {
-            @include Graphik;
             color: $black;
             font-size: $font-size + 4;
             font-weight: $font-weight + 300;
@@ -807,7 +804,6 @@
           }
 
           .organization__subtitle {
-            @include Graphik;
             color: $teachersSubtitle;
             font-size: $font-size + 2;
             font-weight: $font-weight;
@@ -828,11 +824,186 @@
           }
         }
       }
+
+      .contact {
+        display: flex;
+        flex-direction: column;
+
+        .contact__maps {
+          display: flex;
+
+          margin-bottom: 40px;
+
+          .contact__btn {
+            text-align: center;
+
+            margin-right: 10px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .contact__block {
+        display: flex;
+        flex-direction: column;
+
+        .contact__link {
+          font-size: $font-size + 4;
+
+          transition: .2s ease;
+
+          margin-bottom: 8px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &:hover {
+            color: #123a8d;
+          }
+        }
+      }
     }
   }
 }
 
 // organizationStructure
+
+// Scholarship
+.employment {
+  margin-bottom: 45px;
+
+  .employment__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .employment__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 30px;
+
+      .employment__block {
+        display: flex;
+        flex-direction: column;
+
+        .employment__images {
+          width: 200px;
+          height: 200px;
+
+          margin-bottom: 14px;
+        }
+
+        .employment__images-one {
+          background: url(#{$images}/LogoOne.png) no-repeat;
+          background-size: cover;
+        }
+
+        .employment__images-two {
+          background: url(#{$images}/LogoTwo.jpg) no-repeat center;
+          background-size: cover;
+        }
+
+        .employment__images-three {
+          background: url(#{$images}/LogoThree.png) no-repeat center;
+          background-size: cover;
+        }
+
+        .employment__images-four {
+          background: url(#{$images}/LogoFour.png) no-repeat center;
+          background-size: cover;
+        }
+
+        .employment__images-five {
+          background: url(#{$images}/LogoFive.jpg) no-repeat center;
+          background-size: cover;
+        }
+
+        .employment__images-six {
+          background: url(#{$images}/LogoSix.png) no-repeat center;
+          background-size: cover;
+        }
+
+        .employment__images-seven {
+          background: url(#{$images}/LogoSeven.png) no-repeat center;
+          background-size: cover;
+        }
+
+        .employment__images-eight {
+          background: url(#{$images}/LogoEight.jpg) no-repeat center;
+          background-size: cover;
+        }
+
+        .employment__images-nine {
+          background: url(#{$images}/LogoNine.jpg) no-repeat center;
+          background-size: cover;
+        }
+
+        .employment__images-ten {
+          background: url(#{$images}/LogoTen.png) no-repeat center;
+          background-size: cover;
+        }
+
+        .employment__images-eleven {
+          background: url(#{$images}/LogoEleven.png) no-repeat center;
+          background-size: cover;
+        }
+
+        .employment__images-twelve {
+          background: url(#{$images}/LogoTwelve.png) no-repeat center;
+          background-size: cover;
+        }
+
+        .employment__title {
+          color: $black;
+          font-size: $font-size + 4;
+          font-weight: $font-weight + 300;
+          line-height: $line-heightTitle;
+
+          max-width: 250px;
+        }
+
+        .employment__subtitle {
+          color: $teachersSubtitle;
+          font-size: $font-size + 2;
+          font-weight: $font-weight;
+          max-width: 240px;
+
+          margin-top: 4px;
+          margin-bottom: 11px;
+        }
+
+        .employment__link {
+          font-size: $font-size + 4;
+
+          transition: .2s ease;
+
+          &:hover {
+            color: $hoverLink;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dormitory {
+  margin-bottom: 45px;
+
+  .dormitory__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .dormitory__subtitle {
+      margin-top: 8px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// Scholarship
 
 
 // Footer
