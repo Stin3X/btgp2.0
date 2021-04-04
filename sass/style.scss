@@ -423,6 +423,7 @@
 
         .knowledge__general {
           color: $black;
+          font-size: $font-size + 4;
           font-weight: $font-weight + 100;
 
           max-width: 260px;
@@ -872,9 +873,9 @@
 
 // organizationStructure
 
-// Scholarship
+// Employment
 .employment {
-  margin-bottom: 45px;
+  margin-bottom: 80px;
 
   .employment__wrapper {
     display: flex;
@@ -989,22 +990,520 @@
   }
 }
 
+// Employment
+
+// Dormitory
 .dormitory {
-  margin-bottom: 45px;
+  margin-bottom: 80px;
 
   .dormitory__wrapper {
     display: flex;
     flex-direction: column;
 
-    .dormitory__subtitle {
-      margin-top: 8px;
-      margin-bottom: 30px;
+    .dormitory__inner {
+      display: flex;
+      flex-direction: column;
+
+      margin-bottom: 45px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .dormitory__maps {
+        display: flex;
+
+        margin-bottom: 40px;
+
+        .dormitory__btn {
+          text-align: center;
+
+          margin-right: 10px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .dormitory__block {
+        display: flex;
+        flex-direction: column;
+
+        .dormitory__link {
+          font-size: $font-size + 4;
+
+          transition: .2s ease;
+
+          margin-bottom: 8px;
+
+          &:hover {
+            color: #123a8d;
+          }
+        }
+      }
+
+      .dormitory__general {
+        display: flex;
+        justify-content: space-between;
+
+        .dormitory__description-left {
+          display: flex;
+          flex-direction: column;
+
+          margin-right: 32px;
+
+          .dormitory__text {
+            max-width: 619px;
+          }
+
+          .dormitory__payment {
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 20px;
+
+            .dormitory__payment-block {
+              display: flex;
+              flex-direction: column;
+
+              .dormitory__amount {
+                color: $black;
+                font-weight: $font-weight + 100;
+
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+
+        .dormitory__description-right {
+
+          .dormitory__images {
+            width: 660px;
+            height: 370px;
+          }
+
+          .dormitory__images-one {
+            background: url(#{$images}/dormitoryOne.jpg);
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Dormitory
+
+// Scholarship
+.scholarship {
+  margin-bottom: 80px;
+
+  .scholarship__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .scholarship__inner {
+      display: flex;
+      justify-content: space-between;
+
+      .scholarship__card {
+        display: flex;
+        flex-direction: column;
+
+        width: 410px;
+        height: 300px;
+
+        padding: 20px;
+
+        border-radius: 5px;
+
+        cursor: pointer;
+
+        .scholarship__link {
+          color: $white;
+          font-weight: $font-weight + 300;
+
+          max-width: 225px;
+        }
+      }
+
+      .scholarship__card-one {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(#{$images}/scholarshipOne.png) no-repeat;
+        background-size: cover;
+
+        &:hover {
+          background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          url(#{$images}/scholarshipOne.png) no-repeat;
+          background-size: cover;
+        }
+      }
+
+      .scholarship__card-two {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(#{$images}/scholarshipTwo.png) no-repeat;
+        background-size: cover;
+
+        &:hover {
+          background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          url(#{$images}/scholarshipTwo.png) no-repeat;
+          background-size: cover;
+        }
+      }
+
+      .scholarship__card-three {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(#{$images}/scholarshipThree.png) no-repeat;
+        background-size: cover;
+
+        &:hover {
+          background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          url(#{$images}/scholarshipThree.png) no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+.academic {
+  margin-bottom: 80px;
+
+  .academic__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .academic__inner {
+      display: flex;
+      flex-direction: column;
+
+      margin-top: 30px;
+
+      .academic__block {
+        display: flex;
+        justify-content: space-between;
+
+        border-bottom: 1px solid $gray;
+
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+
+        .academic__text {
+          color: $black;
+          font-weight: $font-weight + 300;
+        }
+
+        .academic__width {
+          max-width: 560px;
+          text-align: right;
+        }
+      }
     }
   }
 }
 
 // Scholarship
 
+// vacanciesForAdmission
+.tables {
+  margin-bottom: 80px;
+
+  .ritz .waffle a {
+    color: inherit;
+  }
+
+  .ritz .waffle .s2 {
+    border-bottom: 1px SOLID #b7b7b7;
+    border-right: 1px SOLID #cccccc;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    @include Graphik;
+    font-size: $font-size;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+
+  .ritz .waffle .s4 {
+    border-bottom: 1px SOLID #b7b7b7;
+    border-right: 1px SOLID #b7b7b7;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    @include Graphik;
+    font-size: $font-size;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+
+  .ritz .waffle .s1 {
+    border-top: 1px SOLID #cccccc;
+    border-bottom: 1px SOLID #cccccc;
+    border-right: 1px SOLID #cccccc;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    @include Graphik;
+    font-size: $font-size;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+
+  .ritz .waffle .s0 {
+    border-left: 1px SOLID #cccccc;
+    border-top: 1px SOLID #cccccc;
+    border-bottom: 1px SOLID #cccccc;
+    border-right: 1px SOLID #cccccc;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    @include Graphik;
+    font-size: $font-size;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+
+  .ritz .waffle .s5 {
+    border-left: 1px SOLID #cccccc;
+    border-bottom: 1px SOLID #b7b7b7;
+    border-right: 1px SOLID #b7b7b7;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    @include Graphik;
+    font-size: $font-size;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 15px;
+  }
+
+  .ritz .waffle .s3 {
+    border-left: 1px SOLID #cccccc;
+    border-bottom: 1px SOLID #b7b7b7;
+    border-right: 1px SOLID #b7b7b7;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    @include Graphik;
+    font-size: $font-size;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 15px;
+  }
+}
+
+// vacanciesForAdmission
+
+// economicActivity
+.economic {
+  margin-bottom: 80px;
+
+  .economic__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// economicActivity
+
+// documents
+.documents {
+  margin-bottom: 80px;
+
+  .documents__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// documents
+
+// education
+.education {
+  margin-bottom: 80px;
+
+  .education__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .education__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 30px;
+      row-gap: 80px;
+
+      .education__block {
+        display: flex;
+        flex-direction: column;
+
+        .education__title {
+          max-width: 330px;
+        }
+
+        .education__line {
+          width: 300px;
+          height: 1px;
+
+          background-color: $black;
+
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+
+        .education__subtitle {
+          color: $black;
+          font-size: $font-size;
+          font-weight: $font-weight + 100;
+
+          text-transform: uppercase;
+
+          margin-bottom: 8px;
+        }
+
+        .education__column {
+          display: flex;
+          flex-direction: column;
+
+          .education__deadline {
+            display: flex;
+
+            .education__deadline-block {
+              display: flex;
+              flex-direction: column;
+
+              margin-right: 30px;
+
+              .education__text {
+                font-size: $font-size;
+              }
+
+              .education__color {
+                color: $black;
+              }
+            }
+          }
+
+          .education__indent {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// education
+
+// admissionsCommittee
+.committee {
+  margin-bottom: 80px;
+
+  .committee__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .committee__inner {
+      display: flex;
+      flex-direction: column;
+
+      .committee__description {
+        display: flex;
+
+        margin-top: 20px;
+
+        .committee__block {
+          display: flex;
+          flex-direction: column;
+
+          margin-right: 60px;
+
+          .committee__general {
+            color: #222222;
+            font-size: $font-size + 4;
+            font-weight: 500;
+            max-width: 260px;
+
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// admissionsCommittee
+
+// disabilityTraining
+.training {
+  margin-bottom: 80px;
+
+  .training__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .training__inner {
+      display: flex;
+      flex-direction: column;
+
+      .training__block {
+        border-bottom: 5px solid $blue;
+        background: $white;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+        padding: 50px 50px 75px;
+
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+// disabilityTraining
+
+// disabilityOrder
+.order {
+  margin-bottom: 80px;
+
+  .order__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .order__inner {
+      display: flex;
+      flex-direction: column;
+
+      .order__block {
+        border-bottom: 5px solid $blue;
+        background: $white;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+        padding: 50px 50px 75px;
+
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+// disabilityOrder
 
 // Footer
 .footer {
