@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -106,7 +109,7 @@
             <div class="header__dropdown-inner container">
                 <div class="header__block">
                     <h3 class="dropdown__title">Информация студенту</h3>
-                    <a href="#" class="dropdown__link">Профессиональные пробы</a>
+                    <a href="professionalTryouts.html" class="dropdown__link">Профессиональные пробы</a>
                 </div>
             </div>
         </div>
@@ -115,9 +118,43 @@
 
     <!-- guidance -->
     <section class="guidance centering">
-        <div class="guidance__Wrapper container">
-            <h1></h1>
-            <p></p>
+        <div class="guidance__wrapper container">
+            <h1>Профориентация</h1>
+            <p class="subtitle">
+                Здесь вы можете ознакомиться с более подробной информацией о каждой специальности нашего техникума
+            </p>
+            <div class="guidance_inner">
+                <div class="guidance__block">
+                    <h3 class="guidance__cursor" onclick="guidanceIframeOne()">Каменные работы</h3>
+                    <iframe class="guidance__iframe" id="guidanceBlockOne" width="700" height="350"
+                        src="https://www.youtube.com/embed/aj0bj5iQMsI" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""></iframe>
+                </div>
+                <div class="guidance__block">
+                    <h3 class="guidance__cursor" onclick="guidanceIframeTwo()">Облицовка плиткой</h3>
+                    <iframe class="guidance__iframe" id="guidanceBlockTwo" width="700" height="350"
+                        src="https://www.youtube.com/embed/f02QHWFHUvI" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""></iframe>
+                </div>
+                <div class="guidance__block">
+                    <h3 class="guidance__cursor" onclick="guidanceIframeThree()">Гостиничный сервис</h3>
+                    <iframe class="guidance__iframe" id="guidanceBlockThree" width="700" height="350"
+                        src="https://www.youtube.com/embed/FJoS0rY0Dys" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div class="guidance_inner">
+                <div class="guidance__block">
+                    <h3 class="guidance__cursor" onclick="guidanceIframeFour()">IT</h3>
+                    <iframe class="guidance__iframe" id="guidanceBlockFour" width="700" height="350"
+                        src="https://www.youtube.com/embed/mzHKV4Q2tPY?t=2200" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""></iframe>
+                </div>
+            </div>
         </div>
     </section>
     <!-- guidance -->

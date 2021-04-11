@@ -3,7 +3,7 @@
 // }, function () {
 //     $('.header__dropdown').hide();
 // });
-
+// DropDown
 $('#menuOne, #dropDownOne').on({
     mouseenter: function (e) {
         if (e.target.id == 'menuOne') $('#dropDownOne').show('150');
@@ -45,3 +45,19 @@ $('#menuThree, #dropDownThree').on({
         );
     }
 });
+// DropDown
+
+// Tabs
+function guidanceIframeOne() {
+    document.getElementById("guidanceBlockOne").classList.toggle("guidance__active")
+}
+function guidanceIframeTwo() {
+    document.getElementById("guidanceBlockTwo").classList.toggle("guidance__active")
+}
+function guidanceIframeThree() {
+    document.getElementById("guidanceBlockThree").classList.toggle("guidance__active")
+}
+function guidanceIframeFour() {
+    document.getElementById("guidanceBlockFour").classList.toggle("guidance__active")
+}
+// Tabs

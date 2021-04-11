@@ -1358,8 +1358,19 @@
           max-width: 330px;
         }
 
+        .education__images {
+          width: 350px;
+          height: 220px;
+
+          margin-bottom: 14px;
+        }
+
+        .education__radius {
+          border-radius: 16px;
+        }
+
         .education__line {
-          width: 300px;
+          width: 350px;
           height: 1px;
 
           background-color: $black;
@@ -1504,6 +1515,122 @@
 }
 
 // disabilityOrder
+
+// guidance
+
+.guidance {
+  margin-bottom: 80px;
+
+  .guidance__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .guidance_inner {
+      display: flex;
+      flex-direction: column;
+
+      .guidance__block {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 30px;
+
+        .guidance__cursor {
+          cursor: pointer;
+        }
+
+        .guidance__iframe {
+          display: none;
+        }
+
+        .guidance__active {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+// guidance
+
+// library
+.library {
+  margin-bottom: 80px;
+
+  .library__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .library__inner {
+      display: flex;
+      flex-direction: column;
+
+      .library__block {
+        border-bottom: 5px solid $blue;
+        background: $white;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+        padding: 50px 50px 75px;
+
+        margin-bottom: 30px;
+
+        .library__link {
+          @include Graphik;
+          color: $black;
+          font-size: $font-size + 26;
+          font-weight: $font-weight + 300;
+          line-height: $line-heightTitle;
+
+          transition: .2s ease;
+
+          &:hover {
+            color: $blue;
+          }
+        }
+
+        .library__indent {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+// library
+
+// professionalSaturdays
+.saturdays {
+  margin-bottom: 80px;
+
+  .saturdays__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .saturdays__inner {
+      display: flex;
+      flex-direction: column;
+
+      .saturdays__indent {
+        margin-top: 30px;
+      }
+
+      .saturdays__block {
+        display: flex;
+
+        .saturdays__description {
+          margin-top: 15px;
+          margin-left: 20px;
+
+          .saturdays__text {
+            max-width: 700px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// professionalSaturdays
 
 // Footer
 .footer {
