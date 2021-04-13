@@ -1632,6 +1632,110 @@
 
 // professionalSaturdays
 
+// professionalTryouts
+.tryouts {
+  margin-bottom: 80px;
+
+  .tryouts__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .tryouts__inner {
+      display: flex;
+
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .tryouts__images {
+        width: 600px;
+        height: 300px;
+
+        border-radius: 100%;
+
+        margin-right: 30px;
+      }
+
+      .tryouts__images-one {
+        background: url(#{$images}/tryoutsOne.png);
+        background-size: cover;
+      }
+
+      .tryouts__images-two {
+        background: url(#{$images}/tryoutsTwo.png);
+        background-size: cover;
+      }
+
+      .tryouts__images-three {
+        background: url(#{$images}/tryoutsThree.png);
+        background-size: cover;
+      }
+
+      .tryouts__images-four {
+        background: url(#{$images}/tryoutsFour.png);
+        background-size: cover;
+      }
+
+      .tryouts__images-five {
+        background: url(#{$images}/tryoutsFive.png);
+        background-size: cover;
+      }
+
+      .tryouts__images-six {
+        background: url(#{$images}/tryoutsSix.png);
+        background-size: cover;
+      }
+
+      .tryouts__images-seven {
+        background: url(#{$images}/tryoutsSeven.png);
+        background-size: cover;
+      }
+
+      .tryouts__images-eight {
+        background: url(#{$images}/tryoutsEight.png);
+        background-size: cover;
+      }
+      
+      .tryouts__images-nine {
+        background: url(#{$images}/tryoutsNine.png);
+        background-size: cover;
+      }
+
+      .tryouts__description {
+        display: flex;
+        flex-direction: column;
+
+        max-width: 900px;
+
+        .tryouts__block {
+          display: flex;
+          flex-direction: column;
+
+          margin-bottom: 30px;
+
+          .tryouts__title {
+            margin-bottom: 11px;
+          }
+
+          .tryouts__zeroing {
+            margin-bottom: 0;
+          }
+
+          .tryouts__text {
+            text-align: justify;
+
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// professionalTryouts
+
 // Footer
 .footer {
   background: $blue;
