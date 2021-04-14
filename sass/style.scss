@@ -1697,7 +1697,7 @@
         background: url(#{$images}/tryoutsEight.png);
         background-size: cover;
       }
-      
+
       .tryouts__images-nine {
         background: url(#{$images}/tryoutsNine.png);
         background-size: cover;
@@ -1735,6 +1735,75 @@
 }
 
 // professionalTryouts
+
+// Modal
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  .modal__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    background-color: $white;
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(0, 0, 0, .2);
+
+    padding: 100px;
+
+    .modal__inner {
+      display: flex;
+      flex-direction: column;
+
+      .modal__close {
+        color: $blue;
+        font-size: $font-size + 20;
+        font-weight: $font-weight + 300;
+        opacity: 0.5;
+        max-width: 25px;
+
+        position: absolute;
+        top: 0;
+        right: 15px;
+
+        transition: .2s ease;
+
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .modal__width {
+        width: 100%;
+
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.modal__emergence {
+  display: flex;
+}
+
+
+// Modal
 
 // Footer
 .footer {

@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="header__social-right">
-                    <button class="btn header__btn-question">Подать заявку</button>
+                    <button class="btn header__btn-question" onclick="modal()">Подать заявку</button>
                     <button class="btn header__btn-in">
                         <span class="header__btn-icon"></span>
                         Войти
@@ -686,6 +686,23 @@
         </div>
     </section>
     <!-- professionalTryouts -->
+
+    <!-- Modal -->
+    <section id="myModal" class="modal">
+        <div class="modal__wrapper">
+            <!-- Authorization -->
+            <form class="modal__inner" method="POST" action="">
+                <span class="modal__close" onclick="closeModal()">&times;</span>
+                <input type="text" required name="login" placeholder="ФИО">
+                <input type="email" required name="password" placeholder="Введите почту">
+                <input type="text" required name="password" placeholder="Введите телефон">
+                <input type="file" required name="password" multiple>
+                <button type="submit" name="button" class="btn__form modal__width">Отправить</button>
+            </form>
+            <!-- Authorization -->
+        </div>
+    </section>
+    <!-- Modal -->
 
     <!-- Footer -->
     <footer class="footer centering">

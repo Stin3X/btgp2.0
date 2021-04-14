@@ -51,13 +51,26 @@ $('#menuThree, #dropDownThree').on({
 function guidanceIframeOne() {
     document.getElementById("guidanceBlockOne").classList.toggle("guidance__active")
 }
+
 function guidanceIframeTwo() {
     document.getElementById("guidanceBlockTwo").classList.toggle("guidance__active")
 }
+
 function guidanceIframeThree() {
     document.getElementById("guidanceBlockThree").classList.toggle("guidance__active")
 }
+
 function guidanceIframeFour() {
     document.getElementById("guidanceBlockFour").classList.toggle("guidance__active")
 }
 // Tabs
+
+// Modal
+function modal() {
+    document.getElementById("myModal").classList.add("modal__emergence")
+}
+
+function closeModal() {
+    document.getElementById("myModal").classList.remove("modal__emergence")
+}
+// Modal
