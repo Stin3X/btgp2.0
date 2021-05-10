@@ -79,7 +79,8 @@ a {
 // LINK
 
 // FORM
-input {
+
+.input__general {
   @include Graphik;
   color: $gray;
   font-size: $font-size;
@@ -96,7 +97,7 @@ input {
   outline: none;
 }
 
-textarea {
+.textarea__general {
   @include Graphik;
   color: $gray;
   font-size: $font-size;

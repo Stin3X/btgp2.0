@@ -98,7 +98,7 @@ a {
 .color__link {
   color: #1A54CA !important; }
 
-input {
+.input__general {
   font-family: "Graphik LCG", sans-serif;
   color: #9298A4;
   font-size: 16px;
@@ -110,7 +110,7 @@ input {
   margin-bottom: 8px;
   outline: none; }
 
-textarea {
+.textarea__general {
   font-family: "Graphik LCG", sans-serif;
   color: #9298A4;
   font-size: 16px;
