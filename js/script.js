@@ -1,8 +1,8 @@
-// $("#menu").hover(function () {
-//     $('.header__dropdown').show();
-// }, function () {
-//     $('.header__dropdown').hide();
-// });
+$("#menu").hover(function () {
+    $('.header__dropdown').show();
+}, function () {
+    $('.header__dropdown').hide();
+});
 // DropDown
 $('#menuOne, #dropDownOne').on({
     mouseenter: function (e) {
